@@ -78,9 +78,9 @@ public class RobotContainer {
         //         () -> driverXbox.getRawAxis(2));
 
          AbsoluteDriveAdv closedAbsoluteDriveAdv = new AbsoluteDriveAdv(drivebase,
-                 () -> MathUtil.applyDeadband(ps4.getRawAxis(1),
+                 () -> MathUtil.applyDeadband(ps4,
                          OperatorConstants.LEFT_Y_DEADBAND),
-                 () -> MathUtil.applyDeadband(ps4.getRawAxis(0),
+                 () -> MathUtil.applyDeadband(ps4.(0),
                          OperatorConstants.LEFT_X_DEADBAND),
                  () -> MathUtil.applyDeadband(ps4.getRawAxis(2),
                          OperatorConstants.RIGHT_X_DEADBAND),
